@@ -1,0 +1,132 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+h1,
+a {
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+}
+
+video {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+@media (max-width: 960px) {
+  .container {
+    padding: 0 3rem;
+  }
+}
+
+.v-header {
+  height: 100vh;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.v-header .bg-video {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.v-header .header-overlay {
+  height: 100vh;
+  width: 100%;
+  background: #225470;
+  opacity: 0.85;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.v-header .header-content h1 {
+  font-size: 50px;
+  margin: 1rem 0;
+}
+
+.v-header .header-content p {
+  font-size: 24px;
+  margin: 1rem 0;
+}
+
+.v-header .header-content a {
+  display: inline-block;
+  background: #34b4a0;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+
+.v-header .header-content a:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 960px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.grid section {
+  padding: 1rem 0;
+}
+
+.grid section h1 {
+  margin: 1rem 0;
+}
+
+.grid section p {
+  margin: 1rem 0;
+}
+
+.grid section.section-b {
+  background: #333;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
